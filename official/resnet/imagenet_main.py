@@ -24,11 +24,11 @@ from absl import app as absl_app
 from absl import flags
 import tensorflow as tf  # pylint: disable=g-bad-import-order
 
-from official.utils.flags import core as flags_core
-from official.utils.logs import logger
-from official.resnet import imagenet_preprocessing
-from official.resnet import resnet_model
-from official.resnet import resnet_run_loop
+from ..utils.flags import core as flags_core
+from ..utils.logs import logger
+from ..resnet import imagenet_preprocessing
+from ..resnet import resnet_model
+from ..resnet import resnet_run_loop
 
 _DEFAULT_IMAGE_SIZE = 224
 _NUM_CHANNELS = 3
