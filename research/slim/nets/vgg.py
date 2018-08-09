@@ -205,6 +205,7 @@ def vgg_16(inputs,
       if global_pool:
         net = tf.reduce_mean(net, [1, 2], keep_dims=True, name='global_pool')
         end_points['global_pool'] = net
+
       if num_classes:
         net = slim.dropout(net, dropout_keep_prob, is_training=is_training,
                            scope='dropout7')
